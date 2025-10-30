@@ -1,0 +1,74 @@
+﻿:root {
+  --porsche-red: #d5001c;
+  --dark: #111;
+  --light: #fff;
+  --gray: #f6f6f6;
+  --maxw: 1200px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  margin: 0;
+  color: var(--dark);
+  background: var(--light);
+  line-height: 1.5;
+}
+.pcw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--light);
+  border-bottom: 1px solid #ddd;
+}
+.logo { font-weight: 700; text-transform: uppercase; text-decoration: none; color: var(--dark); }
+nav a { margin-left: 1.5rem; text-decoration: none; color: var(--dark); }
+nav a.btn { background: var(--porsche-red); color: #fff; padding: 0.4rem 1rem; border-radius: 2px; }
+.btn, .pcw-btn {
+  background: var(--porsche-red);
+  color: var(--light);
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
+.btn-outline {
+  background: transparent;
+  color: var(--porsche-red);
+  border: 1px solid var(--porsche-red);
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: url("assets/hero-bg.jpg") center/cover no-repeat;
+  color: #fff;
+}
+.hero h1, .hero p { color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+section { max-width: var(--maxw); margin: 2rem auto; padding: 0 1rem; }
+.cards, .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--gray);
+  padding: 1rem;
+  border-radius: 4px;
+}
+.card img { width: 100%; border-radius: 4px 4px 0 0; }
+.hours { margin-top: 1rem; border-collapse: collapse; }
+.hours th, .hours td { border: 1px solid #ddd; padding: 0.3rem 0.6rem; }
+.contact form { display: flex; flex-direction: column; gap: 0.5rem; max-width: 400px; margin: auto; }
+.contact input, .contact textarea, .contact select {
+  width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 3px;
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+}
+@media (max-width: 600px) {
+  nav a { margin-left: 0.8rem; font-size: 0.9rem; }
+  .hero { padding: 2.5rem 1rem; }
+}
