@@ -2,7 +2,7 @@
 # Porsche Center Website Migration Demo
 Porsche Website Migration
 ## Objective
-Recreate four existing dealer pages using the new Porsche Center Website (PCW) layout,(without a CMS), to demonstrate design consistency, content migration, and UX alignment.
+Recreate four existing dealer pages using the new Porsche Center Website (PCW) layout,to demonstrate design consistency, content migration, and UX alignment (Note: without a CMS)
 
 ## Deliverables
 - `index.html` – Homepage (Champion Porsche)
